@@ -13,7 +13,7 @@ function FindImages() {
 function FindScale() {
     var percent = 100/imgs.length;
     const smallSize = `width:${percent-1}%;`;
-    const bigSize = `width:${percent+10}%;border:thin solid black;`;
+    const bigSize = `width:${percent+8}%;border:thin solid black;`;
     const globalStyle = `transition-duration:250ms;vertical-align:middle;margin-right:0.1%;margin-left:0.1%;border-radius:5%;`;
     for(let a = 0; a < imgs.length; a++) {
         imgs[a].setAttribute("style",`${smallSize}${globalStyle}`);
