@@ -1,0 +1,52 @@
+:root {
+    --defaultShadow: drop-shadow(0px 0px 5px black);
+}
+
+html {
+    background-color: rgb(137, 0, 0)
+}
+
+#holdImages {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 3%;
+}
+
+#mainContents {
+    margin: 3%;
+}
+
+.headers {
+    text-align: center;
+    font-family: sans-serif;
+    font-size:30px;
+    font-size:2.5vw;
+    color:rgb(253, 0, 0);
+    filter: var(--defaultShadow);
+}
+.favoriteImages {
+    width: 15%;
+    margin: 2.5%;
+    margin-top: 3%;
+    filter: var(--defaultShadow);
+    border-radius: 2%;
+    transition-duration: 250ms;
+}
+.favoriteImages:hover {
+    width:20%;
+    margin: 0%;
+    transition-duration: 250ms;
+}
+
+.favoriteText {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
