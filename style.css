@@ -50,3 +50,17 @@ html {
 .right {
     float: right;
 }
+
+.twitterBanner {
+    width:35%;
+    margin:2.5%;
+    margin-top:3%;
+    filter: var(--defaultShadow);
+    border-radius:2%;
+    transition-duration: 250ms;
+}
+.twitterBanner:hover {
+    width:45%;
+    margin: 1%;
+    transition-duration: 250ms;
+}
