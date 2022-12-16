@@ -51,6 +51,20 @@ html {
     float: right;
 }
 
+.preImages {
+    width: 20%;
+    margin: 2.5%;
+    margin-top: 3%;
+    filter: var(--defaultShadow);
+    border-radius: 2%;
+    transition-duration: 250ms;
+}
+.preImages:hover {
+    width:35%;
+    margin: 0%;
+    transition-duration: 250ms;
+}
+
 .twitterBanner {
     width:35%;
     margin:2.5%;
