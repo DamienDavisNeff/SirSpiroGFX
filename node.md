@@ -1,0 +1,1 @@
+This branch includes the verson of my portfolio site that is meant to run on a node.js server with images & other assets seperated from the main site. This branch is outdated, the proper branch is: *static*. 
