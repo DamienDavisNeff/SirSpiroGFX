@@ -17,20 +17,19 @@ function HideButton(state,id) {
         document.getElementById(id).classList.remove("hidden");
     }
 }
-function ChangeCursor(state,id,enabledType) {
+function ChangeCursor(id,enabledType) {
     for(let a = 0; a < id.length; a++) {
-        if(state) document.getElementById(id[a]).style.cursor = enabledType;
-        if(!state) document.getElementById(id[a]).style.cursor = enabledType;
+        document.getElementById(id[a]).style.cursor = enabledType;
     }
 }
 
 window.onscroll = function(e) {
     if(this.scrollY >= window.innerHeight / 3) {
         HideButton(false,"upButton","upButtonCircle","upButtonIcon");
-        ChangeCursor(false,["upButtonCircle","upButtonIcon"],"pointer");
+        ChangeCursor(["upButtonCircle","upButtonIcon"],"pointer");
     } else {
         HideButton(true,"upButton","upButtonCircle","upButtonIcon");
-        ChangeCursor(true,["upButtonCircle","upButtonIcon"],"default");
+        ChangeCursor(["upButtonCircle","upButtonIcon"],"default");
     }
     
 }
