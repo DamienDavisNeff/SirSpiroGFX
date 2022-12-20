@@ -21,7 +21,7 @@ h1 {
 
 /*
 #
-#
+# IMAGES
 #
 */
 
@@ -34,13 +34,6 @@ h1 {
     margin-right:30%;
     margin-bottom:11%;
 }
-
-.buttonBottomRight {
-    position:fixed;
-    bottom:-50;
-    right:-30;
-}
-
 .portfolio {
     width: 15%;
     vertical-align: middle;
@@ -55,7 +48,6 @@ h1 {
     width: 30%;
     transition-duration: 250ms;
 }
-
 .banner {
     width:30%;
     vertical-align: middle;
@@ -85,10 +77,23 @@ h1 {
 
 /*
 #
-#
+# POSITIONS
 #
 */
 
+.buttonBottomRight {
+    position:fixed;
+    bottom:-50;
+    right:-30;
+}
+
+/*
+#
+# GLOBAL
+#
+*/
+
+/* These apply transitions to everything, in theory */
 .transition {
     transition-duration:250ms;
 }
