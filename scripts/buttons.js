@@ -1,10 +1,8 @@
-function addShadow(id) {
-    document.getElementById(id).classList.add("focused");
-    document.getElementById(id).classList.add("shadow");
-}
-function removeShadow(id) {
-    document.getElementById(id).classList.remove("focused");
-    document.getElementById(id).classList.remove("shadow");
+function toggleShadow(state,id) {
+    for(let a = 0; a < id.length; a++) {
+        if(state) document.getElementById(id[a]).classList.add("shadow");
+        if(!state) document.getElementById(id[a]).classList.remove("shadow");
+    }
 }
 
 function HideButton(state,id) {
