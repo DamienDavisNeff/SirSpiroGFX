@@ -17,9 +17,19 @@ function HideButton(state,id) {
         document.getElementById(id).classList.add("unhidden");
         document.getElementById(id).classList.remove("hidden");
     }
+    UpdateState(id);
+}
+function UpdateState(id) {
+    setTimeout(() => {
+        if(document.getElementById("upButton").classList.contains("hidden")) {
+            document.getElementById("upButton").hidden = true;
+        } else { document.getElementById("upButton").hidden = false; }
+    }, 1000);
 }
 
 window.onscroll = function(e) {
     HideButton(true,"upButton");
     if(this.scrollY >= window.innerHeight / 3) HideButton(false,"upButton");
+
+    
 }
