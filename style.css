@@ -104,11 +104,11 @@ h1 {
     -webkit-text-fill-color: red;
 }
 
-.hidden {
+.false {
     opacity: 0;
     transition-duration:250ms;
 }
-.unhid {
+.true {
     opacity: 1;
     transition-duration:250ms;
 }
