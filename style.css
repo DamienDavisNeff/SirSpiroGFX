@@ -101,7 +101,7 @@ h1 {
     transition-duration:250ms;
 }
 
-.shadow {
+.trueShadow {
     filter:drop-shadow(0 0 1vw black);
 }
 .stroke {
