@@ -79,9 +79,9 @@
     </div>
     <!-- FIXED THINGS -->
     <div class="hidden" id="upButton" style="position:inline;" onmouseenter="addShadow('upButtonCircle');addShadow('upButtonIcon');" onmouseleave="removeShadow('upButtonCircle');removeShadow('upButtonIcon');">
-        <a href="#top">
+        <a onclick="GoTo(`${window.location.href}#top`,'upButton')">
             <img class="buttonBG buttonBottomRight transition" id="upButtonCircle" src="images/icons/circle_button.png" style="scale:35%;">
-            <img class="buttonBottomRight transition" id="upButtonIcon" src="images/icons/arrow.png" style="scale:20%;rotate:180deg">
+            <img class="buttonBottomRight transition" id="upButtonIcon" src="images/icons/arrow.png" style="scale:20%;rotate:180deg;">
         </a>
     </div>
 </body>

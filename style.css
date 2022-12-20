@@ -3,7 +3,7 @@
 }
 @font-face {
     font-family: moonlightning;
-    src: url(fonts/Moonlightning.ttf);
+    src: url(fonts/Moonlightning.otf);
 }
 
 html {
@@ -109,9 +109,9 @@ h1 {
 
 .hidden {
     opacity: 0;
-    transition-duration:150ms;
+    transition-duration:250ms;
 }
-.unhidden {
+.unhid {
     opacity: 1;
-    transition-duration:150ms;
+    transition-duration:250ms;
 }
