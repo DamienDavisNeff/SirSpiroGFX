@@ -96,9 +96,6 @@ h1 {
     transition-duration:250ms;
 }
 
-.focused {
-    cursor:pointer;
-}
 .shadow {
     filter:drop-shadow(0 0 1vw black);
 }

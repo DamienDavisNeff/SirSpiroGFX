@@ -7,26 +7,30 @@ function removeShadow(id) {
     document.getElementById(id).classList.remove("shadow");
 }
 
-function HideButton(state,id,id2,id3) {
+function HideButton(state,id) {
     if(state) {
         document.getElementById(id).classList.add("hidden");
         document.getElementById(id).classList.remove("unhid");
-        document.getElementById(id2).style.cursor = "default";
-        document.getElementById(id3).style.cursor = "default";
     }
     if(!state) {
         document.getElementById(id).classList.add("unhid");
         document.getElementById(id).classList.remove("hidden");
-        document.getElementById(id2).style.cursor = "pointer";
-        document.getElementById(id3).style.cursor = "pointer";
+    }
+}
+function ChangeCursor(state,id,enabledType) {
+    for(let a = 0; a < id.length; a++) {
+        if(state) document.getElementById(id[a]).style.cursor = enabledType;
+        if(!state) document.getElementById(id[a]).style.cursor = enabledType;
     }
 }
 
 window.onscroll = function(e) {
     if(this.scrollY >= window.innerHeight / 3) {
         HideButton(false,"upButton","upButtonCircle","upButtonIcon");
+        ChangeCursor(false,["upButtonCircle","upButtonIcon"],"pointer");
     } else {
         HideButton(true,"upButton","upButtonCircle","upButtonIcon");
+        ChangeCursor(true,["upButtonCircle","upButtonIcon"],"default");
     }
     
 }
