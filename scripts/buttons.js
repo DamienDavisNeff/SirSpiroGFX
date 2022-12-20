@@ -29,7 +29,7 @@ window.onscroll = function(e) {
 }
 
 function GoTo(link,id) {
-    if(document.getElementById(id).getAttribute("class").includes("hidden")) return; // If the button is disabled, does not proceed
+    if(document.getElementById(id).getAttribute("class").includes("false")) return; // If the button is disabled, does not proceed
     /*
     If a ID is included in the link, splits it, and adds the *last* id to the start of the link
     This is because sometimes I use 'window.location.href' which includes the id that is already there
