@@ -30,9 +30,16 @@ h1 {
     float:center;
     text-align: center;
     margin-top:8%;
-    margin-left:32%;
+    margin-left:30%;
     margin-right:30%;
-    margin-bottom:11%;
+    transition-duration: 350ms;
+}
+.headerImage:hover {
+    width:40%;
+    margin-top:0%;
+    margin-left:26%;
+    margin-right:26%;
+    transition-duration: 350ms;
 }
 .portfolio {
     width: 15%;
