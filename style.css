@@ -12,7 +12,6 @@ html {
     text-align: center;
     color: red;
     cursor: default;
-    
 }
 h1 {
     font-family: moonlightning, sans-serif;
@@ -34,6 +33,7 @@ h1 {
     margin-left:30%;
     margin-right:30%;
     transition-duration: 350ms;
+    cursor:pointer;
 }
 .headerImage:hover {
     width:40%;
