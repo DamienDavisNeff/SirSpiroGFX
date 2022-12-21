@@ -14,7 +14,7 @@ html {
     
 }
 h1 {
-    font-family: moonlightning;
+    font-family: moonlightning, sans-serif;
     font-size: 4.5vw;
     text-transform: uppercase;
 }
