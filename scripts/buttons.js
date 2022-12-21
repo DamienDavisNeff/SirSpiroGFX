@@ -10,6 +10,7 @@ window.onscroll = function(e) {
 }
 
 function GoTo(link,id) {
+    if(id != null && id != undefined && id != "")
     if(document.getElementById(id).getAttribute("class").includes("false")) return; // If the button is disabled, does not proceed
     /*
     If a ID is included in the link, splits it, and adds the *last* id to the start of the link
