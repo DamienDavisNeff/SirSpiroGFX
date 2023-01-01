@@ -1,1 +1,1 @@
-This branch includes the static version of my portfolio, which does not depend on node.js and stores all assets in the site's directory & is the most up to date. 
+This branch includes the main version of my site, which does not depend on node.js. 
