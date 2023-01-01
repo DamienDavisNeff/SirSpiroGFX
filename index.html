@@ -3,99 +3,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SirSpiro's Portfolio</title>
+    <title>SirSpiro • Home</title>
     <!-- LINKS -->
-    <link rel="shortcut icon" href="images/icons/favicon_white.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/global.js"></script>
-    <script src="scripts/buttons.js"></script>
-    <!-- META -->
-    <meta property="og:title" content="SirSpiro's Portfolio"/>
-    <meta property="og:image" content="https://imgur.com/58Tt7IS"/>
-    <meta property="og:url" content="https://www.spiro.ga"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="627"/>
+    <link rel="stylesheet" href="design/main.css">
+    <link rel="stylesheet" href="design/navigation.css">
+    <link rel="stylesheet" href="design/header.css">
+    <link rel="stylesheet" href="design/streamHeader.css">
+    <link rel="stylesheet" href="design/featured.css">
+    <link rel="stylesheet" href="design/merch.css">
+    <link rel="shortcut icon" href="design/images/root/favicon.png" type="image/x-icon">
+    <!-- SCRIPTS -->
+    <script src="scripts/design.js" defer></script>
 </head>
-<body>
-    <div id="top">
-        <a onclick="GoTo(`${window.location.href}#portfolio`,'headerScroll')">
-            <img src="images/icons/favicon_alt.png" class="headerImage" onmouseenter="ToggleButton(true,'headerScroll')" onmouseleave="ToggleButton(false,'headerScroll')">
-            <h1 id="headerScroll" class="shadow stroke false" style="margin-top:-4%;margin-bottom:10%;">SCROLL DOWN</h1>
-        </a>
+<body id="body" style="opacity:0;transition-duration:250ms" onload="FadeIn('body','500')">
+    <div id="nav">
+        <a href="https://spiro.ga"><img src="design/images/root/favicon.png" alt="S" class="logoNav"></a>
+        <!-- REVERSE ORDER OF NAV BAR -->
+        <p class="textNav urlNav" style="opacity:0"></p><!-- SEPERATOR -->
+        <span id="shopping">
+            <!-- when cart is implemented, cart src should be Cart.png -->
+            <a onclick="alert('Shopping is currently not available. Try again later.')"><img class="imgNav" src="design/images/icons/shopping/RemoveFromCart.png" style="filter:invert()"></a>
+            <p class="textNav urlNav" style="opacity:0"></p><!-- SEPERATOR -->
+        </span>
+        <a href="https://discord.gg/xz3S4nK" target="_blank"><img class="imgNav" src="design/images/icons/social/Discord.png"></a>
+        <a href="https://youtube.com/@SirSpiro" target="_blank"><img class="imgNav" src="design/images/icons/social/YouTube.png"></a>
+        <a href="https://twitter.com/SirSpiroSZN" target="_blank"><img class="imgNav" src="design/images/icons/social/Twitter.png"></a>
+        <a href="portfolio.html"><!--Placholder href--><p class="textNav urlNav">Portfolio</p></a>
+        <a href="https://spiro.ga"><!--Placholder href--><p class="textNav urlNav">Home</p></a>
     </div>
-    <div id="portfolio">
-        <h1 class="shadow stroke">My Portfolio</h1>
-        <br>
-        <img class="portfolio" src="images/portfolio/Alien Weapon.png" >
-        <img class="portfolio" src="images/portfolio/Astronomical.png" >
-        <img class="portfolio" src="images/portfolio/Bad_Gamer.jpg" >
-        <img class="portfolio" src="images/portfolio/Borderlands.jpg" >
-        <img class="portfolio" src="images/portfolio/C3S4 First Game.png" >
-        <img class="portfolio" src="images/portfolio/Can't Be Stoped.png" >
-        <img class="portfolio" src="images/portfolio/Castle_Defense.jpg" >
-        <img class="portfolio" src="images/portfolio/Deadpool.png" >
-        <img class="portfolio" src="images/portfolio/Deku Only.jpg" >
-        <img class="portfolio" src="images/portfolio/Ex Calibar B.png" >
-        <img class="portfolio" src="images/portfolio/Geno Revealed.png" >
-        <img class="portfolio" src="images/portfolio/I Lost Everything.png" >
-        <img class="portfolio" src="images/portfolio/Ransom (REMIX).png" >
-        <img class="portfolio" src="images/portfolio/Rift Tour.png" >
-        <img class="portfolio" src="images/portfolio/Silenced SMG Vaulted.png" >
-        <img class="portfolio" src="images/portfolio/Stream Highlights 1.png" >
-        <img class="portfolio" src="images/portfolio/Stream Highlights 2.png" >
+    <br><br><br><br>
+    <div id="header">
+        <!-- USE YOUTUBE API (FUTURE, FOR NOW MANUALLY UPDATE) -->
+        <div class="left">
+            <br>
+            <p id="RecentUploadDate" style="margin-left:0.15vw;">MM/DD/YYYY</p>
+            <p id="RecentTitle">Placeholder Title Line 1<br>2<br>Placeholder Long Title...</p>
+            <button class="button centerButton" style="margin-left:7.3vw;">WATCH NOW</button>
+        </div>
+        <div class="right">
+            <img src="design/images/thumbnails/placeholder.jpg" id="RecentThumbnail">
+        </div> 
     </div>
-    <br>
-    <div id="favorites">
-        <h1 class="shadow stroke">My Favorites</h1>
-        <br>
-        <img src="images/portfolio/Borderlands.jpg" class="portfolio">
-        <img src="images/portfolio/Castle_Defense.jpg" class="portfolio">
-        <img src="images/portfolio/Ransom (REMIX).png" class="portfolio">
-        <img src="images/portfolio/Silenced SMG Vaulted.png" class="portfolio">
-        <img src="images/portfolio/Stream Highlights 1.png" class="portfolio">
+    <br><br><br><br><br><br><br>
+    <div id="stream">
+        <!-- USE YOUTUBE API (FUTURE, FOR NOW MANUALLY UPDATE) -->
+        <div class="left">
+            <img src="design/images/thumbnails/placeholder.jpg" id="StreamThumbnail">
+        </div> 
+        <div class="right">
+            <br>
+            <p id="StreamDate" style="margin-left:0.15vw;">MM/DD/YYYY</p>
+            <p id="StreamTitle">Placeholder Title Line 1<br>2<br>Placeholder Long Title...</p>
+            <button class="button centerButton" style="margin-left:7.3vw;">WATCH</button>
+        </div>
     </div>
-    <br>
-    <div id="premade">
-        <h1 class="shadow stroke" style="margin-bottom:0%;">Pre-Made & Unused</h1>
-        <p class="shadow" style="font-family:sans-serif;font-size:1.2vw;margin-top:0%;">These assets are already made, but have not been used by anyone.</p>
-        <img class="portfolio" src="images/portfolio/Borderlands.jpg">
-        <img class="portfolio" src="images/portfolio/Bad_Gamer.jpg">
+    <br><br><br><br><br><br><br>
+    <div id="featured">
+        <p class="header">Featured Videos</p>
+        <br><br><br>
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
+        <br><br><br>
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
+        <img class="featuredThumbnail" src="design/images/thumbnails/placeholder.jpg">
     </div>
-    <br>
-    <div id="banners">
-        <h1 class="shadow stroke">Banners</h1>
-        <img class="banner" src="images/portfolio/banners/Spiro.png">
-        <img class="banner" src="images/portfolio/banners/Yagami.png">
-    </div>
-    <br>
-    <div id="logos">
-        <h1 class="shadow stroke">Logos</h1>
-        <img class="logo" src="images/portfolio/logos/SpiroVingette.png">
-        <img class="logo" src="images/portfolio/logos/Yagami.png">
-        <img class="logo" src="images/portfolio/logos/Yagami2.png">
-    </div>
-    <br>
-    <div id="fakeTweets" hidden>
-        <h1 class="shadow stroke" style="margin-bottom:0%;">Fake Tweets!</h1>
-        <p class="shadow subscript" style="margin-bottom:0%;">These assets are not publically available due to possible violations of Twitter's brand guidelines.</p>
-        <p class="shadow subscript">These are PSDs based on the AIs publically available from Twitter.</p>
-        <img class="logo" src="images/portfolio/fake/Dark mode.png">
-        <img class="logo" src="images/portfolio/fake/Light Mode.png">
-    </div>
-    <div class="copyrightMain">
-        <p class="copyrightSub" >© 2016-22 SirSpiro / Damien Davis-Neff</p>
-        <p>Borderlands & Related Assets © 2009 2K Games Inc. / Take Two Interactive, Inc.</p>
-        <p>Fortnite & Related Assets © 2011-22 Epic Games, Inc.</p>
-        <p>Grand Theft Auto & Related Assets © 1997-2022 Rockstar Games, Inc. / Take Two Interactive, Inc.</p>
-        <p hidden>Twitter & Related Assets © 2006-2022 Twitter, Inc.</p>
-        <br>
-    </div>
-    <!-- FIXED THINGS -->
-    <div class="false" id="upButton" style="position:inline;" onmouseenter="ToggleShadow(true,['upButtonCircle','upButtonIcon'])" onmouseleave="ToggleShadow(false,['upButtonCircle','upButtonIcon'])">
-        <a onclick="GoTo(`${window.location.href}#top`,'upButton')">
-            <img class="buttonBG buttonBottomRight transition" id="upButtonCircle" src="images/icons/circle_button.png" style="scale:35%;">
-            <img class="buttonBottomRight transition" id="upButtonIcon" src="images/icons/arrow.png" style="scale:20%;rotate:180deg;">
-        </a>
+    <br><br><br><br><br><br><br>
+    <div class="merch" hidden>
+        <!-- UNFINISHED AREA -->
+        <!-- MERCH UNUSED -->
+        <div id="merch">
+            <img src="design/images/merch/placeholder.png">
+            <img src="design/images/merch/placeholder.png">
+        </div>
     </div>
 </body>
 </html>

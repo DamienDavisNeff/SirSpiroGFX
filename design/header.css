@@ -1,0 +1,42 @@
+#header {
+    margin-top:5vw;
+    margin-left:5vw;
+    margin-right:2vw;
+    vertical-align: middle;
+    display:flex;
+}
+.left {
+    margin-right: 2.5vw;
+}
+.right {
+    margin-left: 2.5vw;
+}
+
+#RecentUploadDate {
+    font-size:1vw;
+    font-weight:lighter;
+    text-align: left;
+    margin-bottom:0.1vh;
+}
+#RecentTitle {
+    font-weight: bold;
+    font-size:3vw;
+    text-align: left;
+    margin-top:0.1vh;
+}
+#RecentThumbnail {
+    margin-top:-1vw;
+    border-radius: 1vw;
+    width:50vw;
+    float: right;
+}
+
+.centerButton {
+    text-align: center;
+    float: center;
+}
+
+.invert {
+    filter:invert();
+    transition-duration: 250ms;
+}
