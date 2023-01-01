@@ -13,6 +13,13 @@ a {
     color: white;
 }
 
+.background {
+    background-color: white;
+    margin-left:-1vw;
+    margin-right:-1vw;
+    margin-bottom:-1vw;
+}
+
 .button {
     width:20vw;
     height:15vh;
@@ -34,4 +41,9 @@ a {
 .inactive {
     opacity:0;
     transition-duration: 250ms;
+}
+
+.copyright {
+    color: black;
+    text-align: center;
 }

@@ -26,6 +26,7 @@
 }
 #RecentThumbnail {
     margin-top:-1vw;
+    margin-right: 4vw;
     border-radius: 1vw;
     width:50vw;
     float: right;
