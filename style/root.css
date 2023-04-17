@@ -10,14 +10,36 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Marvin Round', sans-serif;
     background-color: var(--background-main);
     color: var(--default-text);
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
 }
+.symbol {
+    display: inline;
+}
+.symbol.icon {
+    font-family:cursive !important;
+    font-weight:bolder;
+}
+
+.align {
+    display: inline-block !important;
+}
+
 
 a {
     color: var(--default-text);
+    text-decoration: none;
+    transition-duration: 250ms;
+}
+
+#copyright {
+    position: absolute;
+    bottom:0;
+    width:60%;
+    left:20%;
+    right:20%;
 }
