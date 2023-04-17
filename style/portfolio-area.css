@@ -50,7 +50,7 @@
 }
 
 .youtube-banner {
-    width: 74%;
+    width: 76%;
     margin: 10px;
     border-radius:20px;
     transition-duration:250ms;
@@ -75,6 +75,11 @@
     display:inline;
     vertical-align: middle;
 }
+.contact-image-mobile {
+    width: 35%;
+    display:inline;
+    vertical-align: middle;
+}
 .link-parent {
     float: left;
     width:33%;
@@ -85,5 +90,22 @@
 .link-parent:hover {
     opacity:0.5;
     transition-duration:250ms;
+}
+
+@media screen and (orientation:portrait) {
+    #contact[type="desktop"] {
+        display:none;
+    }
+    #contact[type="mobile"] {
+        display:block;
+    }
+}
+@media screen and (orientation:landscape) {
+    #contact[type="desktop"] {
+        display:block;
+    }
+    #contact[type="mobile"] {
+        display:none;
+    }
 }
 
