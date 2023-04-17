@@ -1,0 +1,45 @@
+#nav {
+    margin-left:10px;
+    margin-top:10px;
+    margin-right:10px;
+}
+.logoNav {
+    width: 35px;
+    vertical-align: middle;
+    transition-duration: 250ms;
+}
+.logoNav:hover {
+    transform:rotate(15deg);
+    transition-duration: 250ms;
+}
+.textNav {
+    display:inline;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.textNav:hover {
+    transform:scale(1.1,1.1);
+    transition-duration:250ms;
+}
+.urlNav {
+    font-size: 20px;
+    float:right;
+    vertical-align: middle;
+    transition-duration:250ms;
+}
+.imgNav {
+    margin-top:10px;
+    margin-left:5px;
+    margin-right: 5px;
+    display:inline;
+    height: 25px;
+    float:right;
+    vertical-align: middle;
+    transition-duration:250ms;
+}
+.imgNav:hover {
+    transform:scale(1.3,1.3);
+    transition-duration:250ms;
+}

@@ -1,0 +1,23 @@
+:root {
+    --background-main: #000000;
+    --background-secondary: #3f3f3f;
+    --default-text: #ffffff;
+}
+
+@font-face {
+    font-family:'Marvin Round';
+    src: url('../fonts/MarvinRound.otf');
+}
+
+html {
+    font-family: sans-serif;
+    background-color: var(--background-main);
+    color: var(--default-text);
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--default-text);
+}
