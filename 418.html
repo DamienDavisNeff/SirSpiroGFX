@@ -43,7 +43,6 @@
             width:50%;
         } .error-image:hover { width:55%; }
         .seperator { opacity: 0; }
-        .override-capatalize { text-transform: none !important; }
     </style>
 </head>
 <body>
@@ -51,25 +50,20 @@
     <div class="parent-vertical">
         <div class="parent-horizontal">
             <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank">
-                <p class="error-code">404.</p>
+                <p class="error-code">418.</p>
             </a>
             <p class="seperator">.</p>
-            <p class="error-text low-opacity">Not Found</p>
+            <p class="error-text low-opacity">I'm a teapot</p>
 	    </div>
         <div class="parent-horizontal">
             <a href="https://www.spiro.ga">
-                <img src="red_error.png" alt="Broken version of SirSpiro logo. A red 'S' where each layer is falling" class="error-image">
+                <img style="max-height:200px; width: auto;" src="https://static.wikia.nocookie.net/disneyprincess/images/3/31/Mrspotts2.png" alt="Broken version of SirSpiro logo. A red 'S' where each layer is falling" class="error-image">
             </a>
         </div>
         <div class="parent-horizontal">
-            <p class="error-text override-capatalize" id="error">Cannot Get Page [placeholder]</p>
+            <p class="error-text">Enjoy Yourselves -1998 IETF</p>
         </div>
     </div>
     
-    <script>
-        const url = location.pathname;
-        document.getElementById("error").innerHTML = `Cannot Get Page "${url}"`;
-    </script>
-
 </body>
 </html>
