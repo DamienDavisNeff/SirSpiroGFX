@@ -20,7 +20,8 @@
         html { 
             font-family: sans-serif;
             text-transform: capitalize;
-            background-color: rgb(100,0,0); 
+            background-color: rgb(100,0,0);
+            overflow:hidden;
         }
         a {
             color: black;
@@ -31,7 +32,6 @@
             transition-duration: 1ms !important;
         }
         .parent-horizontal { text-align: center; }
-        .parent-vertical { margin-top: 10%; }
         .error-code, .error-text, .seperator {
             display: inline-block;
             font-weight: bold;
@@ -40,9 +40,15 @@
         .low-opacity { opacity:0.6; }
         .error-image {
             vertical-align: middle;
-            width:50%;
-        } .error-image:hover { width:55%; }
+            width:35%;
+        } .error-image:hover { width:40%; }
         .seperator { opacity: 0; }
+        @media screen and (orientation:portrait) {
+            .parent-vertical { margin-top: 30%; }
+        }
+        @media screen and (orientation:landscape) {
+            .parent-vertical { margin-top: -3%; }
+        }
     </style>
 </head>
 <body>
