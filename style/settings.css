@@ -37,120 +37,79 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-  
+
+.emoji {
+    vertical-align: text-top;
+}
+
 #bio {
     background-color: var(--div-color);
-    padding: 50px;
-    border-radius: 10px;
-    width: 450px;
     display: flex;
     align-items: center;
     text-align: center;
 }
-  
 #bio img:not(.emoji) {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-right: 30px;
-    box-shadow: 0px 0px 10px var(--shadow);
+    border-radius:50%;
+    box-shadow: 0 0 1vw var(--shadow);
 }
-  
+#bio .sub-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #bio .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-  
-#bio .header {
-    font-size: 36px;
-    margin: 0 0 10px 0;
-}
-  
-#bio .sub-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-}
-  
-#bio .team,
-.peripheral .name {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-}
-  
 #bio .name {
-    font-size: 24px;
     margin: 0;
 }
-  
 #bio .country {
     display: flex;
     align-items: center;
-    margin: 10px 0;
 }
-  
 #bio .symbol {
-    font-size: 24px;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
 }
-.emoji {
-    height: 26px;
-    vertical-align: text-top;
-}
-  
-#bio .birthday {
-    margin: 10px 0;
-}
-  
 #bio .biography {
-    font-size: 18px;
     margin: 0;
 }
-  
 #bio .social-icons {
-    margin-top: 20px;
     text-align: center;
 }
-  
 #bio .social-icons img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
     border-radius: 50%;
     box-shadow: none;
 }
-  
+#bio .team,
+.peripheral .name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
 .peripheral {
-    margin-top: 50px;
     background-color: var(--div-color);
-    padding: 50px;
-    border-radius: 10px;
-    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
 .peripheral .symbol.title {
-    font-size: 36px;
-    margin: 0 0 10px 0;
     text-transform: uppercase;
 }
-  
 .peripheral img:not(.emoji) {
-    width: 180px;
-    height: 180px;
     border-radius: 50%;
-    margin: 20px 0;
-    box-shadow: 0px 0px 10px var(--shadow);
 }
-  
+.peripheral .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
+}
 .peripheral .settings {
     width: 100%;
     display: flex;
@@ -158,20 +117,159 @@ a:hover {
     justify-content: space-between;
 }
   
-.peripheral .setting {
-    width: 200px;
-    margin-bottom: 20px;
+
+  
+
+
+@media screen and (min-width:501px) {
+    .emoji {
+        height: 26px;
+    }
+    #bio {
+        padding: 50px;
+        border-radius: 10px;
+        width: 450px;
+    }   
+    #bio img:not(.emoji) {
+        width: 180px;
+        height: 180px;
+        margin-right: 30px;
+    } 
+    #bio .header {
+        font-size: 36px;
+        margin: 0 0 10px 0;
+    }
+    #bio .sub-info {
+        margin: 10px 0;
+    }
+    #bio .name {
+        font-size: 24px;
+    }
+    #bio .country {
+        margin: 10px 0;
+    }     
+    #bio .symbol {
+        font-size: 24px;
+    }     
+    #bio .birthday {
+        margin: 10px 0;
+    }
+    #bio .biography {
+        font-size: 18px;
+    }
+    #bio .social-icons {
+        margin-top: 20px;
+    }      
+    #bio .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    #bio .team,
+    .peripheral .name {
+        font-size: 18px;
+    } 
+    .peripheral {
+        margin-top: 50px;
+        padding: 50px;
+        border-radius: 10px;
+        width: 450px;
+    }
+    .peripheral .symbol.title {
+        font-size: 36px;
+        margin: 0 0 10px 0;
+    }  
+    .peripheral img:not(.emoji) {
+        width: 180px;
+        height: 180px;
+        margin: 20px 0;
+        box-shadow: 0px 0px 10px var(--shadow);
+    }
+    .peripheral .setting {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .peripheral .title {
+        margin: 0 0 10px 0;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }  
 }
   
-.peripheral .title {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: left;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
+@media screen and (max-width:500px) {
+    .emoji {
+        height: 19px;
+    }
+    #bio {
+        padding: 50px;
+        border-radius: 5px;
+        width: 200px;
+    }   
+    #bio img:not(.emoji) {
+        width: 180px;
+        height: 180px;
+        margin-right: 30px;
+    } 
+    #bio img:not(.social-icons):not(.emoji) {
+        display:none;
+    }
+    #bio .header {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+    }
+    #bio .sub-info {
+        margin: 8px 0;
+    }
+    #bio .name {
+        font-size: 18px;
+    }
+    #bio .country {
+        margin: 10px 0;
+    }     
+    #bio .symbol {
+        font-size: 18px;
+    }     
+    #bio .birthday {
+        margin: 10px 0;
+    }
+    #bio .biography {
+        font-size: 18px;
+    }
+    #bio .social-icons {
+        margin-top: 20px;
+    }      
+    #bio .social-icons img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    #bio .team,
+    .peripheral .name {
+        font-size: 18px;
+    } 
+    .peripheral {
+        margin-top: 50px;
+        padding: 50px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .peripheral .symbol.title {
+        font-size: 19px;
+        margin: 0 0 10px 0;
+    }  
+    .peripheral img:not(.emoji) {
+        width: 180px;
+        height: 180px;
+        margin: 20px 0;
+        box-shadow: 0px 0px 10px var(--shadow);
+    }
+    .peripheral .setting {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .peripheral .title {
+        margin: 0 0 10px 0;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }  
 }
-  

@@ -43,3 +43,9 @@
     transform:scale(1.3,1.3);
     transition-duration:250ms;
 }
+
+@media screen and (max-width: 500px) {
+    .textNav {
+        display: none;
+    }
+}
